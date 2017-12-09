@@ -11,6 +11,7 @@
     "debug": "~2.6.9",
     "dotenv": "^4.0.0",
     "ejs": "~2.5.7",
+    "electron": "^1.7.9",
     "electron-prebuilt": "^1.4.13",
     "express": "~4.15.5",
     "morgan": "~1.9.0",

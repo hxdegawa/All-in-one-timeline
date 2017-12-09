@@ -6,15 +6,14 @@ const favicon      = require('serve-favicon');
 const logger       = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser   = require('body-parser');
-const electron     = require('electron');
+// const electron     = require('electron');
 require('dotenv').config();
 
 const index       = require('./routes/index');
 const ip_checker  = require('./routes/ip_checker');
 const fb_listener = require('./routes/fb_listener');
-const fb_request  = require('./routes/fb_request');
 const tw_listener = require('./routes/tw_listener');
-const tw_request  = require('./routes/tw_request');
+const request     = require('./routes/request');
 
 const app = express();
 
@@ -33,9 +32,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/ip_checker',  ip_checker);
 app.use('/fb_listener', fb_listener);
-app.use('/fb_request',  fb_request);
 app.use('/tw_listener', tw_listener);
-app.use('/tw_request',  tw_request);
+app.use('/request', request);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -57,11 +55,13 @@ app.use(function(err, req, res, next) {
 
 app.listen(3000, "127.0.0.1");
 
+/*
 electron.app.on("ready", function () {
   var main = new electron.BrowserWindow({width: 800, height: 600});
   main.on("closed", electron.app.quit);
   main.webContents.openDevTools();
   main.loadURL("http://127.0.0.1:3000/");
 });
+*/
 
 module.exports = app;
