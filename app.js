@@ -14,6 +14,7 @@ const ip_checker    = require('./routes/ip_checker');
 const fb_listener   = require('./routes/fb_listener');
 const tw_listener   = require('./routes/tw_listener');
 const line_listener = require('./routes/line_listener');
+const instagram_listener = require('./routes/instagram_listener');
 const request     = require('./routes/request');
 
 const app = express();
@@ -35,6 +36,7 @@ app.use('/ip_checker',  ip_checker);
 app.use('/fb_listener', fb_listener);
 app.use('/tw_listener', tw_listener);
 app.use('/line_listener', line_listener);
+app.use('/instagram_listener', instagram_listener);
 app.use('/request', request);
 
 // catch 404 and forward to error handler

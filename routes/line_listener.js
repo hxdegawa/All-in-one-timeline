@@ -46,11 +46,14 @@ router.get('/', function(req, res) {
         }
         return outputArray;
       })
-      .result((r) => {
+      .result((r) => { if (r[0] !== undefined) {
+
         console.log(r);
-      })
+      }})
       .end()
-      .catch((e) => {})
+      .catch((e) => {
+        console.log(e);
+      })
       .then(() => chromy.close())
 
   res.send('complete');

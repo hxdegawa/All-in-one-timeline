@@ -19,5 +19,8 @@
     "serve-favicon": "~2.4.5",
     "sqlite3": "^3.1.13",
     "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "chromy": "^0.5.7"
   }
 }
