@@ -9,10 +9,11 @@ const bodyParser   = require('body-parser');
 // const electron     = require('electron');
 require('dotenv').config();
 
-const index       = require('./routes/index');
-const ip_checker  = require('./routes/ip_checker');
-const fb_listener = require('./routes/fb_listener');
-const tw_listener = require('./routes/tw_listener');
+const index         = require('./routes/index');
+const ip_checker    = require('./routes/ip_checker');
+const fb_listener   = require('./routes/fb_listener');
+const tw_listener   = require('./routes/tw_listener');
+const line_listener = require('./routes/line_listener');
 const request     = require('./routes/request');
 
 const app = express();
@@ -33,6 +34,7 @@ app.use('/', index);
 app.use('/ip_checker',  ip_checker);
 app.use('/fb_listener', fb_listener);
 app.use('/tw_listener', tw_listener);
+app.use('/line_listener', line_listener);
 app.use('/request', request);
 
 // catch 404 and forward to error handler
