@@ -1,0 +1,7 @@
+[
+  {"title": "スパークル", "description": "君の名は。で話題になったRADWIMPSの手がける劇中歌。", "src": "./music/スパークル.mp3"},
+  {"title": "最高の片想い", "description": "タイナカサチ氏の曲", "src": "./music/最高の片想い.mp3"},
+  {"title": "想い出は遠くの日", "description": "新海誠氏の作品の一つ、秒速5センチメートル「桜花抄」の劇中歌。 ピアノの一音一音が心に響く。", "src": "./music/思い出は遠くの日々.mp3"},
+  {"title": "前前前世", "description": "映画「君の名は。」で注目を集めたかの有名な前前前世。", "src": "./music/前前前世.mp3"},
+  {"title": "test", "description": "うんち", "src": "./music/test.mp3"}
+]

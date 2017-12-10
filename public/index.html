@@ -1,0 +1,90 @@
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>All in one timeline</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main class="main"></main>
+    
+    <div class="user-list">
+
+      <div class="user-card facebook-profile">
+        <div class="user-desc-box">
+          <h1 class="user-name">Motone Adachi</h1>
+          <hr />
+          <span class="service-name">facebook account</span>
+        </div>
+        <div class="user-image-wrapper">
+          <img src="./image/icon2.jpg" alt="image" />
+        </div>
+      </div>
+
+      <div class="user-card twitter-profile">
+        <div class="user-desc-box">
+          <h1 class="user-name">Hayato Suzuki</h1>
+          <hr />
+          <span class="service-name">Twitter account</span>
+        </div>
+        <div class="user-image-wrapper">
+          <img src="./image/icon3.jpg" alt="image" />
+        </div>
+      </div>
+      
+      <div class="user-card line-profile">
+        <div class="user-desc-box">
+          <h1 class="user-name">Hirokazu Degawa</h1>
+          <hr />
+          <span class="service-name">Line account</span>
+        </div>
+        <div class="user-image-wrapper">
+          <img src="./image/icon4.jpg" alt="image" />
+        </div>
+      </div>
+      
+      <div class="user-card instagram-profile">
+        <div class="user-desc-box">
+          <h1 class="user-name">Kotaro Miyashita</h1>
+          <hr />
+          <span class="service-name">Instagram account</span>
+        </div>
+        <div class="user-image-wrapper">
+          <img src="./image/icon5.jpg" alt="image" />
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="setting-button">
+      <i class="fa fa-cog" aria-hidden="true"></i>
+    </div>
+    
+    <div class="focused-image-wrapper">
+      <div class="image-focus-background"></div>
+      <img class="focused-image" src="https://pbs.twimg.com/media/DQlbbhtVoAAPYRG.jpg" alt="">
+    </div>
+    
+    <div class="writer-description">
+      <div class="writer-desc-box">
+        <h1 class="writer-name">hogehoge</h1>
+        <hr />
+        <span class="writer-service-name">hoge account</span>
+      </div>
+      <img class="writer-thumbnail" src="" alt="" />
+    </div>
+    
+    <div class="screen-settings">
+      <div class="auth-button setting-twitter"><span>Twitterと連携 </span><i class="fa fa-twitter" aria-hidden="true"></i></div>
+      <div class="auth-button setting-facebook"><span>Facebookと連携 </span><i class="fa fa-facebook-official" aria-hidden="true"></i></div>
+      <div class="auth-button setting-line"><span>LINEと連携</span><img src="./image/line.svg" alt="line_icon"></div>
+      <div class="auth-button setting-instagram"><span>Instagramと連携</span><img src="./image/instagram.svg" alt="insta_icon"></div>
+    </div>
+    
+    <script src="./jquery-1.12.4.min.js"></script>
+    <script src="./sync.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -7,7 +7,6 @@ const logger       = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser   = require('body-parser');
 // const electron     = require('electron');
-require('dotenv').config();
 
 const index         = require('./routes/index');
 const ip_checker    = require('./routes/ip_checker');
